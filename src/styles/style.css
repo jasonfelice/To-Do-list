@@ -33,6 +33,13 @@ main {
   border-radius: 2px;
 }
 
+.app-header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* App Header */
+
 .heading {
   padding: 15px 10px;
   display: flex;
@@ -52,6 +59,20 @@ main {
   height: 16px;
   filter: invert(0.35);
 }
+
+.add-item {
+  border: none;
+  padding: 15px 10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  border-bottom: 1px solid var(--seperator_color);
+}
+
+.add-item:focus {
+  outline: none;
+}
+
+/* App Footer */
 
 .app-footer {
   padding: 15px 10px;
