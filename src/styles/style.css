@@ -1,7 +1,17 @@
 body {
-    background-color: green;
+  background-color: #09233d;
 }
 
-body::after {
-    content: "Css is working";
+main {
+  display: flex;
+  height: 85vh;
+}
+
+.container {
+  margin: auto;
+  background-color: #fff;
+  width: 90vw;
+  height: 60vw;
+  max-width: 500px;
+  max-height: 350px;
 }
