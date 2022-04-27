@@ -1,6 +1,6 @@
 # Project - To-Do List
 
-![Preview](images/preview/preview.jpg)
+![Preview](src/assets/preview/preview.png)
 
 ## Built With
 
@@ -10,10 +10,10 @@
 - webpack
 
 ## Live Demo
-[Live Demo Link](#)
+[Live Demo Link](https://jasonfelice.github.io/To-Do-list/dist)
 
 To get a local copy up and running follow these simple example steps.
-- Copy this [link](#)
+- Copy this [link](https://github.com/jasonfelice/To-Do-list)
 - Open the terminal
 - Run "git clone" and paste the link
 - Open this folder in your code editor
@@ -34,7 +34,9 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
 ## Acknowledgments
-
+- Reset icon by: [Icons8](https://icons8.com/icon/59872/refresh/)
+- Menu Vertical icon by: [Icons8](https://icons8.com/icon/98963/menu-vertical/)
+- Favicon icon by: [Icons8](https://icons8.com/icon/4528/to-do/)
 
 ## 📝 License
 

@@ -1,7 +1,124 @@
-body {
-    background-color: green;
+:root {
+  --seperator_color: #ddd;
+  --text_color: #444;
 }
 
-body::after {
-    content: "Css is working";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif, monospace;
+}
+
+body {
+  background-color: #bbdfd4;
+}
+
+main {
+  display: flex;
+  height: 85vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 90vw;
+  height: 60vw;
+  max-width: 500px;
+  max-height: 350px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #666;
+  border-radius: 2px;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* App Header */
+
+.heading {
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--seperator_color);
+}
+
+.heading p {
+  font-size: 1.25rem;
+  color: var(--text_color);
+}
+
+.heading i {
+  background: url(../assets/reset-icon.svg) no-repeat center center/cover;
+  width: 16px;
+  height: 16px;
+  filter: invert(0.35);
+}
+
+.add-item {
+  border: none;
+  cursor: default;
+  padding: 15px 10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  border-bottom: 1px solid var(--seperator_color);
+}
+
+.add-item:focus {
+  outline: none;
+}
+
+/* The List */
+
+.to-do-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  padding: 15px 10px;
+  font-size: 1.1rem;
+  color: var(--text_color);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--seperator_color);
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.task p {
+  font-family: sans-serif, monospace;
+}
+
+.list-item i {
+  background: url(../assets/verticle-menu.png) no-repeat center center/cover;
+  height: 20px;
+  width: 20px;
+  filter: invert(0.5);
+}
+
+/* App Footer */
+
+.app-footer {
+  padding: 15px 10px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.app-footer a {
+  text-decoration: none;
+  color: #777;
+}
+
+.app-footer a:hover {
+  color: var(--text_color);
 }
