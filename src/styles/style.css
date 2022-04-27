@@ -99,7 +99,7 @@ main {
   font-family: sans-serif, monospace;
 }
 
-.list-item i{
+.list-item i {
   background: url(../assets/verticle-menu.png) no-repeat center center/cover;
   height: 20px;
   width: 20px;
