@@ -113,12 +113,26 @@ main {
   gap: 1rem;
 }
 
-.task p {
+.task input {
   font-family: sans-serif, monospace;
+  border: none;
+  cursor: default;
 }
 
-.list-item i {
+.task input:focus {
+  outline: none;
+}
+
+.list-item .drag-btn {
+  display: block;
   background: url(../assets/verticle-menu.png) no-repeat center center/cover;
+  height: 20px;
+  width: 20px;
+  filter: invert(0.5);
+}
+
+.list-item .del-btn {
+  background: url(../assets/delete.png) no-repeat center center/cover;
   height: 20px;
   width: 20px;
   filter: invert(0.5);
