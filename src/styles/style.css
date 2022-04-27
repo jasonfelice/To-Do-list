@@ -61,16 +61,34 @@ main {
 }
 
 .add-item {
-  border: none;
-  cursor: default;
   padding: 15px 10px;
-  font-size: 1.2rem;
-  font-style: italic;
   border-bottom: 1px solid var(--seperator_color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.add-item:focus {
+.add-item input {
+  border: none;
+  cursor: default;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.add-item input:focus {
   outline: none;
+}
+
+.add-item i {
+  background: url(../assets/return-icon.png) no-repeat center center;
+  width: 7px;
+  height: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.add-item i:active {
+  filter: invert(0.7);
 }
 
 /* The List */
