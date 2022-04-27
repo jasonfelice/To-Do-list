@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #09233d;
+  background-color: #bbdfd4;
 }
 
 main {
@@ -9,9 +15,32 @@ main {
 
 .container {
   margin: auto;
-  background-color: #fff;
   width: 90vw;
   height: 60vw;
   max-width: 500px;
   max-height: 350px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #666;
+  border-radius: 2px;
+}
+
+.heading {
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.heading p {
+  font-family: serif, monospace;
+  font-size: 1.25rem;
+  color: #444;
+}
+
+.heading i {
+  background: url(../assets/reset-icon.svg) no-repeat center center/cover;
+  width: 16px;
+  height: 16px;
+  filter: invert(0.35);
 }
