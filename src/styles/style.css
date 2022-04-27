@@ -1,7 +1,13 @@
+:root {
+  --seperator_color: #ddd;
+  --text_color: #444;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: serif, monospace;
 }
 
 body {
@@ -14,6 +20,9 @@ main {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: auto;
   width: 90vw;
   height: 60vw;
@@ -29,13 +38,12 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--seperator_color);
 }
 
 .heading p {
-  font-family: serif, monospace;
   font-size: 1.25rem;
-  color: #444;
+  color: var(--text_color);
 }
 
 .heading i {
@@ -43,4 +51,19 @@ main {
   width: 16px;
   height: 16px;
   filter: invert(0.35);
+}
+
+.app-footer {
+  padding: 15px 10px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.app-footer a {
+  text-decoration: none;
+  color: #777;
+}
+
+.app-footer a:hover {
+  color: var(--text_color);
 }
