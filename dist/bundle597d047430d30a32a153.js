@@ -32,7 +32,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --seperator_color: #ddd;\n  --text_color: #444;\n  --text_color_completed: #666;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: serif, monospace;\n}\n\nbody {\n  background-color: #bbdfd4;\n}\n\nmain {\n  display: flex;\n  height: 85vh;\n}\n\n.container {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  margin: auto;\n  width: 90vw;\n  height: 60vw;\n  max-width: 500px;\n  max-height: 350px;\n  background-color: #fff;\n  box-shadow: 0 0 10px #666;\n  border-radius: 2px;\n}\n\n.app-header {\n  display: flex;\n  flex-direction: column;\n}\n\n/* App Header */\n.heading {\n  padding: 15px 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid var(--seperator_color);\n}\n\n.heading p {\n  font-size: 1.25rem;\n  color: var(--text_color);\n}\n\n.heading i {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/cover;\n  width: 16px;\n  height: 16px;\n  filter: invert(0.35);\n}\n\n.add-item {\n  padding: 15px 10px;\n  border-bottom: 1px solid var(--seperator_color);\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.add-item input {\n  border: none;\n  cursor: default;\n  font-size: 1.2rem;\n  font-style: italic;\n}\n\n.add-item input:focus {\n  outline: none;\n}\n\n.add-item i {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\n  width: 7px;\n  height: 12px;\n  padding: 10px 12px;\n  cursor: pointer;\n}\n\n.add-item i:active {\n  filter: invert(0.7);\n}\n\n/* The List */\n.to-do-list {\n  display: flex;\n  flex-direction: column;\n}\n\n.list-item {\n  padding: 15px 10px;\n  font-size: 1.1rem;\n  color: var(--text_color);\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid var(--seperator_color);\n}\n\n.task {\n  display: flex;\n  align-items: center;\n  gap: 1rem;\n}\n\n.task input {\n  font-family: sans-serif, monospace;\n  border: none;\n  cursor: default;\n}\n\n.completed .task-description {\n  text-decoration: line-through;\n  color: var(--text_color_completed);\n}\n\n.task input:focus {\n  outline: none;\n}\n\n.list-item .drag-btn {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center center/cover;\n  height: 20px;\n  width: 20px;\n  filter: invert(0.5);\n}\n\n.list-item .del-btn {\n  display: block;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat center center/cover;\n  height: 20px;\n  width: 20px;\n  filter: invert(0.5);\n}\n\n/* App Footer */\n.app-footer {\n  padding: 15px 10px;\n  text-align: center;\n  background-color: #f6f6f6;\n}\n\n.app-footer a {\n  text-decoration: none;\n  color: #777;\n}\n\n.app-footer a:hover {\n  color: var(--text_color);\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,kBAAA;EACA,4BAAA;AACF;;AAEA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;EACA,6BAAA;AACF;;AAEA;EACE,yBAAA;AACF;;AAEA;EACE,aAAA;EACA,YAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;EACA,iBAAA;EACA,sBAAA;EACA,yBAAA;EACA,kBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;AACF;;AAEA,eAAA;AAEA;EACE,kBAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,+CAAA;AAAF;;AAGA;EACE,kBAAA;EACA,wBAAA;AAAF;;AAGA;EACE,iFAAA;EACA,WAAA;EACA,YAAA;EACA,oBAAA;AAAF;;AAGA;EACE,kBAAA;EACA,+CAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AAAF;;AAGA;EACE,YAAA;EACA,eAAA;EACA,iBAAA;EACA,kBAAA;AAAF;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,2EAAA;EACA,UAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;AAAF;;AAGA;EACE,mBAAA;AAAF;;AAGA,aAAA;AAEA;EACE,aAAA;EACA,sBAAA;AADF;;AAIA;EACE,kBAAA;EACA,iBAAA;EACA,wBAAA;EACA,aAAA;EACA,8BAAA;EACA,+CAAA;AADF;;AAIA;EACE,aAAA;EACA,mBAAA;EACA,SAAA;AADF;;AAIA;EACE,kCAAA;EACA,YAAA;EACA,eAAA;AADF;;AAIA;EACE,6BAAA;EACA,kCAAA;AADF;;AAIA;EACE,aAAA;AADF;;AAIA;EACE,iFAAA;EACA,YAAA;EACA,WAAA;EACA,mBAAA;AADF;;AAIA;EACE,cAAA;EACA,iFAAA;EACA,YAAA;EACA,WAAA;EACA,mBAAA;AADF;;AAIA,eAAA;AAEA;EACE,kBAAA;EACA,kBAAA;EACA,yBAAA;AAFF;;AAKA;EACE,qBAAA;EACA,WAAA;AAFF;;AAKA;EACE,wBAAA;AAFF","sourcesContent":[":root {\r\n  --seperator_color: #ddd;\r\n  --text_color: #444;\r\n  --text_color_completed: #666;\r\n}\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: serif, monospace;\r\n}\r\n\r\nbody {\r\n  background-color: #bbdfd4;\r\n}\r\n\r\nmain {\r\n  display: flex;\r\n  height: 85vh;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  margin: auto;\r\n  width: 90vw;\r\n  height: 60vw;\r\n  max-width: 500px;\r\n  max-height: 350px;\r\n  background-color: #fff;\r\n  box-shadow: 0 0 10px #666;\r\n  border-radius: 2px;\r\n}\r\n\r\n.app-header {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n/* App Header */\r\n\r\n.heading {\r\n  padding: 15px 10px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  border-bottom: 1px solid var(--seperator_color);\r\n}\r\n\r\n.heading p {\r\n  font-size: 1.25rem;\r\n  color: var(--text_color);\r\n}\r\n\r\n.heading i {\r\n  background: url(../assets/reset-icon.svg) no-repeat center center/cover;\r\n  width: 16px;\r\n  height: 16px;\r\n  filter: invert(0.35);\r\n}\r\n\r\n.add-item {\r\n  padding: 15px 10px;\r\n  border-bottom: 1px solid var(--seperator_color);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.add-item input {\r\n  border: none;\r\n  cursor: default;\r\n  font-size: 1.2rem;\r\n  font-style: italic;\r\n}\r\n\r\n.add-item input:focus {\r\n  outline: none;\r\n}\r\n\r\n.add-item i {\r\n  background: url(../assets/return-icon.png) no-repeat center center;\r\n  width: 7px;\r\n  height: 12px;\r\n  padding: 10px 12px;\r\n  cursor: pointer;\r\n}\r\n\r\n.add-item i:active {\r\n  filter: invert(0.7);\r\n}\r\n\r\n/* The List */\r\n\r\n.to-do-list {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.list-item {\r\n  padding: 15px 10px;\r\n  font-size: 1.1rem;\r\n  color: var(--text_color);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  border-bottom: 1px solid var(--seperator_color);\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 1rem;\r\n}\r\n\r\n.task input {\r\n  font-family: sans-serif, monospace;\r\n  border: none;\r\n  cursor: default;\r\n}\r\n\r\n.completed .task-description {\r\n  text-decoration: line-through;\r\n  color: var(--text_color_completed);\r\n}\r\n\r\n.task input:focus {\r\n  outline: none;\r\n}\r\n\r\n.list-item .drag-btn {\r\n  background: url(../assets/verticle-menu.png) no-repeat center center/cover;\r\n  height: 20px;\r\n  width: 20px;\r\n  filter: invert(0.5);\r\n}\r\n\r\n.list-item .del-btn {\r\n  display: block;\r\n  background: url(../assets/delete.png) no-repeat center center/cover;\r\n  height: 20px;\r\n  width: 20px;\r\n  filter: invert(0.5);\r\n}\r\n\r\n/* App Footer */\r\n\r\n.app-footer {\r\n  padding: 15px 10px;\r\n  text-align: center;\r\n  background-color: #f6f6f6;\r\n}\r\n\r\n.app-footer a {\r\n  text-decoration: none;\r\n  color: #777;\r\n}\r\n\r\n.app-footer a:hover {\r\n  color: var(--text_color);\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --seperator_color: #ddd;\n  --text_color: #444;\n  --text_color_completed: #666;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: serif, monospace;\n}\n\nbody {\n  background-color: #bbdfd4;\n}\n\nmain {\n  display: flex;\n  height: 85vh;\n}\n\n.container {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  margin: auto;\n  width: 90vw;\n  height: 60vw;\n  max-width: 500px;\n  max-height: 350px;\n  background-color: #fff;\n  box-shadow: 0 0 10px #666;\n  border-radius: 2px;\n}\n\n.app-header {\n  display: flex;\n  flex-direction: column;\n}\n\n/* App Header */\n.heading {\n  padding: 15px 10px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid var(--seperator_color);\n}\n\n.heading p {\n  font-size: 1.25rem;\n  color: var(--text_color);\n}\n\n.heading i {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/cover;\n  width: 16px;\n  height: 16px;\n  filter: invert(0.35);\n}\n\n.add-item {\n  padding: 15px 10px;\n  border-bottom: 1px solid var(--seperator_color);\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.add-item input {\n  border: none;\n  cursor: default;\n  font-size: 1.2rem;\n  font-style: italic;\n}\n\n.task input {\n  font-family: sans-serif, monospace;\n  border: none;\n  cursor: default;\n}\n\n.add-item input:focus {\n  outline: none;\n}\n\n.add-item i {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") no-repeat center center;\n  width: 7px;\n  height: 12px;\n  padding: 10px 12px;\n  cursor: pointer;\n}\n\n.add-item i:active {\n  filter: invert(0.7);\n}\n\n/* The List */\n.to-do-list {\n  display: flex;\n  flex-direction: column;\n}\n\n.list-item {\n  padding: 15px 10px;\n  font-size: 1.1rem;\n  color: var(--text_color);\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid var(--seperator_color);\n}\n\n.task {\n  display: flex;\n  align-items: center;\n  gap: 1rem;\n}\n\n.completed .task-description {\n  text-decoration: line-through;\n  color: var(--text_color_completed);\n}\n\n.task input:focus {\n  outline: none;\n}\n\n.list-item .drag-btn {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") no-repeat center center/cover;\n  height: 20px;\n  width: 20px;\n  filter: invert(0.5);\n}\n\n.list-item .del-btn {\n  display: block;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat center center/cover;\n  height: 20px;\n  width: 20px;\n  filter: invert(0.5);\n}\n\n/* App Footer */\n.app-footer {\n  padding: 15px 10px;\n  text-align: center;\n  background-color: #f6f6f6;\n}\n\n.app-footer a {\n  text-decoration: none;\n  color: #777;\n}\n\n.app-footer a:hover {\n  color: var(--text_color);\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,kBAAA;EACA,4BAAA;AACF;;AAEA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;EACA,6BAAA;AACF;;AAEA;EACE,yBAAA;AACF;;AAEA;EACE,aAAA;EACA,YAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;EACA,iBAAA;EACA,sBAAA;EACA,yBAAA;EACA,kBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;AACF;;AAEA,eAAA;AAEA;EACE,kBAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,+CAAA;AAAF;;AAGA;EACE,kBAAA;EACA,wBAAA;AAAF;;AAGA;EACE,iFAAA;EACA,WAAA;EACA,YAAA;EACA,oBAAA;AAAF;;AAGA;EACE,kBAAA;EACA,+CAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AAAF;;AAGA;EACE,YAAA;EACA,eAAA;EACA,iBAAA;EACA,kBAAA;AAAF;;AAGA;EACE,kCAAA;EACA,YAAA;EACA,eAAA;AAAF;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,2EAAA;EACA,UAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;AAAF;;AAGA;EACE,mBAAA;AAAF;;AAGA,aAAA;AAEA;EACE,aAAA;EACA,sBAAA;AADF;;AAIA;EACE,kBAAA;EACA,iBAAA;EACA,wBAAA;EACA,aAAA;EACA,8BAAA;EACA,+CAAA;AADF;;AAIA;EACE,aAAA;EACA,mBAAA;EACA,SAAA;AADF;;AAIA;EACE,6BAAA;EACA,kCAAA;AADF;;AAIA;EACE,aAAA;AADF;;AAIA;EACE,iFAAA;EACA,YAAA;EACA,WAAA;EACA,mBAAA;AADF;;AAIA;EACE,cAAA;EACA,iFAAA;EACA,YAAA;EACA,WAAA;EACA,mBAAA;AADF;;AAIA,eAAA;AAEA;EACE,kBAAA;EACA,kBAAA;EACA,yBAAA;AAFF;;AAKA;EACE,qBAAA;EACA,WAAA;AAFF;;AAKA;EACE,wBAAA;AAFF","sourcesContent":[":root {\r\n  --seperator_color: #ddd;\r\n  --text_color: #444;\r\n  --text_color_completed: #666;\r\n}\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: serif, monospace;\r\n}\r\n\r\nbody {\r\n  background-color: #bbdfd4;\r\n}\r\n\r\nmain {\r\n  display: flex;\r\n  height: 85vh;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  margin: auto;\r\n  width: 90vw;\r\n  height: 60vw;\r\n  max-width: 500px;\r\n  max-height: 350px;\r\n  background-color: #fff;\r\n  box-shadow: 0 0 10px #666;\r\n  border-radius: 2px;\r\n}\r\n\r\n.app-header {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n/* App Header */\r\n\r\n.heading {\r\n  padding: 15px 10px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  border-bottom: 1px solid var(--seperator_color);\r\n}\r\n\r\n.heading p {\r\n  font-size: 1.25rem;\r\n  color: var(--text_color);\r\n}\r\n\r\n.heading i {\r\n  background: url(../assets/reset-icon.svg) no-repeat center center/cover;\r\n  width: 16px;\r\n  height: 16px;\r\n  filter: invert(0.35);\r\n}\r\n\r\n.add-item {\r\n  padding: 15px 10px;\r\n  border-bottom: 1px solid var(--seperator_color);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.add-item input {\r\n  border: none;\r\n  cursor: default;\r\n  font-size: 1.2rem;\r\n  font-style: italic;\r\n}\r\n\r\n.task input {\r\n  font-family: sans-serif, monospace;\r\n  border: none;\r\n  cursor: default;\r\n}\r\n\r\n.add-item input:focus {\r\n  outline: none;\r\n}\r\n\r\n.add-item i {\r\n  background: url(../assets/return-icon.png) no-repeat center center;\r\n  width: 7px;\r\n  height: 12px;\r\n  padding: 10px 12px;\r\n  cursor: pointer;\r\n}\r\n\r\n.add-item i:active {\r\n  filter: invert(0.7);\r\n}\r\n\r\n/* The List */\r\n\r\n.to-do-list {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.list-item {\r\n  padding: 15px 10px;\r\n  font-size: 1.1rem;\r\n  color: var(--text_color);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  border-bottom: 1px solid var(--seperator_color);\r\n}\r\n\r\n.task {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 1rem;\r\n}\r\n\r\n.completed .task-description {\r\n  text-decoration: line-through;\r\n  color: var(--text_color_completed);\r\n}\r\n\r\n.task input:focus {\r\n  outline: none;\r\n}\r\n\r\n.list-item .drag-btn {\r\n  background: url(../assets/verticle-menu.png) no-repeat center center/cover;\r\n  height: 20px;\r\n  width: 20px;\r\n  filter: invert(0.5);\r\n}\r\n\r\n.list-item .del-btn {\r\n  display: block;\r\n  background: url(../assets/delete.png) no-repeat center center/cover;\r\n  height: 20px;\r\n  width: 20px;\r\n  filter: invert(0.5);\r\n}\r\n\r\n/* App Footer */\r\n\r\n.app-footer {\r\n  padding: 15px 10px;\r\n  text-align: center;\r\n  background-color: #f6f6f6;\r\n}\r\n\r\n.app-footer a {\r\n  text-decoration: none;\r\n  color: #777;\r\n}\r\n\r\n.app-footer a:hover {\r\n  color: var(--text_color);\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -587,7 +587,7 @@ module.exports = styleTagTransform;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "List": () => (/* binding */ List)
+/* harmony export */   "default": () => (/* binding */ List)
 /* harmony export */ });
 class List {
   constructor(task, index, boo) {
@@ -620,7 +620,7 @@ class List {
   }
 
   static deleteCompleted() {
-    taskList = List.taskList.filter((each) => each.isCompleted !== true);
+    List.taskList = List.taskList.filter((each) => each.isCompleted !== true);
     List.reindex();
   }
 }
@@ -638,8 +638,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _List__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./List */ "./src/modules/List.js");
-/* harmony import */ var _updateStorage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./updateStorage */ "./src/modules/updateStorage.js");
+/* harmony import */ var _List_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./List.js */ "./src/modules/List.js");
+/* harmony import */ var _updateStorage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./updateStorage.js */ "./src/modules/updateStorage.js");
 
 
 
@@ -649,9 +649,9 @@ function chkBxEvent() {
   const chkBoxes = document.querySelectorAll('.task input[type="checkbox"]');
   chkBoxes.forEach((each) => each.addEventListener('change', () => {
     const index = +(each.parentElement.parentElement.getAttribute('id')) - 1;
-    _List__WEBPACK_IMPORTED_MODULE_0__.List.taskList[index].toggleCompleted();
+    _List_js__WEBPACK_IMPORTED_MODULE_0__["default"].taskList[index].toggleCompleted();
     each.parentElement.parentElement.classList.toggle('completed');
-    (0,_updateStorage__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    (0,_updateStorage_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
   }));
 }
 
@@ -680,8 +680,8 @@ function chkBxEvntsClr() {
   description.value = taskItem;
   description.addEventListener('input', (e) => {
     const desInput = e.target;
-    _List__WEBPACK_IMPORTED_MODULE_0__.List.taskList[+(desInput.parentElement.parentElement.getAttribute('id') - 1)].updateTask(desInput.value);
-    (0,_updateStorage__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    _List_js__WEBPACK_IMPORTED_MODULE_0__["default"].taskList[+(desInput.parentElement.parentElement.getAttribute('id') - 1)].updateTask(desInput.value);
+    (0,_updateStorage_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
   });
   const btnWrapper = document.createElement('div');
   const dragBtn = document.createElement('i');
@@ -690,9 +690,9 @@ function chkBxEvntsClr() {
   delBtn.classList.add('del-btn');
   delBtn.addEventListener('click', () => {
     const theTask = delBtn.parentElement.parentElement;
-    _List__WEBPACK_IMPORTED_MODULE_0__.List.deleteTask(+theTask.getAttribute('id'));
+    _List_js__WEBPACK_IMPORTED_MODULE_0__["default"].deleteTask(+theTask.getAttribute('id'));
     theTask.remove();
-    (0,_updateStorage__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    (0,_updateStorage_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
   });
   delBtn.addEventListener('click', () => {
     const listItems = document.querySelectorAll('.list-item');
@@ -721,33 +721,50 @@ function chkBxEvntsClr() {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _addTask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addTask */ "./src/modules/addTask.js");
-/* harmony import */ var _List__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./List */ "./src/modules/List.js");
-/* harmony import */ var _updateStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./updateStorage */ "./src/modules/updateStorage.js");
+/* harmony import */ var _addTask_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addTask.js */ "./src/modules/addTask.js");
+/* harmony import */ var _List_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./List.js */ "./src/modules/List.js");
+/* harmony import */ var _updateStorage_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./updateStorage.js */ "./src/modules/updateStorage.js");
 
 
 
 
 const addInput = document.querySelector('.add-item input');
 const returnBtn = document.querySelector('.return-button');
+const clearButton = document.getElementById('clearCompleted');
 
 if (localStorage.tasks) {
   const storedTasks = JSON.parse(localStorage.tasks);
   storedTasks.forEach((item) => {
-    _List__WEBPACK_IMPORTED_MODULE_1__.List.taskList.push(new _List__WEBPACK_IMPORTED_MODULE_1__.List(item.task, item.index, item.isCompleted));
-    (0,_addTask__WEBPACK_IMPORTED_MODULE_0__["default"])(item.task, item.index, item.isCompleted);
+    _List_js__WEBPACK_IMPORTED_MODULE_1__["default"].taskList.push(new _List_js__WEBPACK_IMPORTED_MODULE_1__["default"](item.task, item.index, item.isCompleted));
+    (0,_addTask_js__WEBPACK_IMPORTED_MODULE_0__["default"])(item.task, item.index, item.isCompleted);
   });
 }
 
 const updateTaskArray = (task) => {
-  _List__WEBPACK_IMPORTED_MODULE_1__.List.taskList.push(new _List__WEBPACK_IMPORTED_MODULE_1__.List(task, _List__WEBPACK_IMPORTED_MODULE_1__.List.taskList.length + 1, false));
+  _List_js__WEBPACK_IMPORTED_MODULE_1__["default"].taskList.push(new _List_js__WEBPACK_IMPORTED_MODULE_1__["default"](task, _List_js__WEBPACK_IMPORTED_MODULE_1__["default"].taskList.length + 1, false));
 };
 
 returnBtn.addEventListener('click', () => {
-  (0,_addTask__WEBPACK_IMPORTED_MODULE_0__["default"])(addInput.value, _List__WEBPACK_IMPORTED_MODULE_1__.List.taskList.length + 1, false);
+  (0,_addTask_js__WEBPACK_IMPORTED_MODULE_0__["default"])(addInput.value, _List_js__WEBPACK_IMPORTED_MODULE_1__["default"].taskList.length + 1, false);
   updateTaskArray(addInput.value);
-  (0,_updateStorage__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  (0,_updateStorage_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
   addInput.value = '';
+});
+
+clearButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  const allTasks = document.querySelectorAll('.list-item');
+  allTasks.forEach((item) => {
+    if (item.classList.value.includes('completed')) {
+      item.remove();
+      _List_js__WEBPACK_IMPORTED_MODULE_1__["default"].deleteCompleted();
+    }
+  });
+  (0,_updateStorage_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  const listItems = document.querySelectorAll('.list-item');
+  for (let i = 0; i < listItems.length; i += 1) {
+    listItems[i].setAttribute('id', i + 1);
+  }
 });
 
 
@@ -763,11 +780,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _List__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./List */ "./src/modules/List.js");
+/* harmony import */ var _List_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./List.js */ "./src/modules/List.js");
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
-  localStorage.setItem('tasks', JSON.stringify(_List__WEBPACK_IMPORTED_MODULE_0__.List.taskList));
+  localStorage.setItem('tasks', JSON.stringify(_List_js__WEBPACK_IMPORTED_MODULE_0__["default"].taskList));
 });
 
 
@@ -958,4 +975,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle318abe58f5b06c940bb8.js.map
+//# sourceMappingURL=bundle597d047430d30a32a153.js.map
