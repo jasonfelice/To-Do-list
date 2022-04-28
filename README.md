@@ -37,6 +37,7 @@ Feel free to check the [issues page](../../issues/).
 - Reset icon by: [Icons8](https://icons8.com/icon/59872/refresh/)
 - Menu Vertical icon by: [Icons8](https://icons8.com/icon/98963/menu-vertical/)
 - Favicon icon by: [Icons8](https://icons8.com/icon/4528/to-do/)
+- Delete icon by: [Icons8](https://icons8.com/icon/99961/delete/)
 
 ## 📝 License
 

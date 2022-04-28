@@ -1,6 +1,7 @@
 :root {
   --seperator_color: #ddd;
   --text_color: #444;
+  --text_color_completed: #666;
 }
 
 * {
@@ -61,16 +62,40 @@ main {
 }
 
 .add-item {
-  border: none;
-  cursor: default;
   padding: 15px 10px;
-  font-size: 1.2rem;
-  font-style: italic;
   border-bottom: 1px solid var(--seperator_color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.add-item:focus {
+.add-item input {
+  border: none;
+  cursor: default;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.task input {
+  font-family: sans-serif, monospace;
+  border: none;
+  cursor: default;
+}
+
+.add-item input:focus {
   outline: none;
+}
+
+.add-item i {
+  background: url(../assets/return-icon.png) no-repeat center center;
+  width: 7px;
+  height: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.add-item i:active {
+  filter: invert(0.7);
 }
 
 /* The List */
@@ -95,12 +120,25 @@ main {
   gap: 1rem;
 }
 
-.task p {
-  font-family: sans-serif, monospace;
+.completed .task-description {
+  text-decoration: line-through;
+  color: var(--text_color_completed);
 }
 
-.list-item i {
+.task input:focus {
+  outline: none;
+}
+
+.list-item .drag-btn {
   background: url(../assets/verticle-menu.png) no-repeat center center/cover;
+  height: 20px;
+  width: 20px;
+  filter: invert(0.5);
+}
+
+.list-item .del-btn {
+  display: block;
+  background: url(../assets/delete.png) no-repeat center center/cover;
   height: 20px;
   width: 20px;
   filter: invert(0.5);
