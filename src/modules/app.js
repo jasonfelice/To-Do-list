@@ -4,6 +4,7 @@ import updateStorage from './updateStorage.js';
 
 const addInput = document.querySelector('.add-item input');
 const returnBtn = document.querySelector('.return-button');
+const clearButton = document.getElementById('clearCompleted');
 
 if (localStorage.tasks) {
   const storedTasks = JSON.parse(localStorage.tasks);
@@ -22,4 +23,20 @@ returnBtn.addEventListener('click', () => {
   updateTaskArray(addInput.value);
   updateStorage();
   addInput.value = '';
+});
+
+clearButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  const allTasks = document.querySelectorAll('.list-item');
+  allTasks.forEach((item) => {
+    if(item.classList['value'].includes('completed')) {
+      item.remove();
+      List.deleteCompleted();
+    }
+  });
+  updateStorage();
+  const listItems = document.querySelectorAll('.list-item');
+  for (let i = 0; i < listItems.length; i += 1) {
+    listItems[i].setAttribute('id', i + 1);
+  }
 });
