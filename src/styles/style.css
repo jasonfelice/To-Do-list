@@ -124,7 +124,6 @@ main {
 }
 
 .list-item .drag-btn {
-  display: block;
   background: url(../assets/verticle-menu.png) no-repeat center center/cover;
   height: 20px;
   width: 20px;
@@ -132,6 +131,7 @@ main {
 }
 
 .list-item .del-btn {
+  display: block;
   background: url(../assets/delete.png) no-repeat center center/cover;
   height: 20px;
   width: 20px;

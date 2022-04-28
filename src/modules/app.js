@@ -1,18 +1,15 @@
 import addTask from './addTask';
+import { List } from './List';
 
 const addInput = document.querySelector('.add-item input');
 const returnBtn = document.querySelector('.return-button');
-const taskArray = [];
 
 const updateTaskArray = (task) => {
-  taskArray.push({
-    description: task,
-    completed: false,
-    index: taskArray.length + 1,
-  });
+  List.taskList.push(new List(task, List.taskList.length + 1, false));
 };
 
 returnBtn.addEventListener('click', () => {
-  addTask(addInput.value);
+  addTask(addInput.value, List.taskList.length + 1);
   updateTaskArray(addInput.value);
+  addInput.value = '';
 });

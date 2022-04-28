@@ -1,9 +1,11 @@
-export default class List {
+export class List {
   constructor(task, index, boo) {
     this.task = task;
     this.index = index;
     this.isCompleted = boo;
   }
+
+  static taskList = [];
 
   toggleCompleted() {
     if (this.isCompleted === false) {
@@ -16,18 +18,18 @@ export default class List {
   }
 
   static reindex() {
-    for (let i = 0; i < taskList.length; i += 1) {
-      taskList[i].index = i + 1;
+    for (let i = 0; i < List.taskList.length; i += 1) {
+      List.taskList[i].index = i + 1;
     }
   }
 
   static deleteTask(i) {
-    taskList = taskList.filter((each) => each.index !== i);
+    List.taskList = List.taskList.filter((each) => each.index !== i);
     List.reindex();
   }
 
   static deleteCompleted() {
-    taskList = taskList.filter((each) => each.isCompleted !== true);
+    taskList = List.taskList.filter((each) => each.isCompleted !== true);
     List.reindex();
   }
 }
