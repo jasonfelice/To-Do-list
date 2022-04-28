@@ -1,6 +1,7 @@
 :root {
   --seperator_color: #ddd;
   --text_color: #444;
+  --text_color_completed: #666;
 }
 
 * {
@@ -117,6 +118,11 @@ main {
   font-family: sans-serif, monospace;
   border: none;
   cursor: default;
+}
+
+.completed .task-description {
+  text-decoration: line-through;
+  color: var(--text_color_completed);
 }
 
 .task input:focus {

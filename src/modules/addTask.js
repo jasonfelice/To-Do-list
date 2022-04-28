@@ -4,12 +4,13 @@ const listWrapper = document.querySelector('.to-do-list');
 
 function chkBxEvent() {
   const chkBoxes = document.querySelectorAll('.task input[type="checkbox"]');
-  for (let i = 0; i < chkBoxes.length; i += 1) {
-    chkBoxes[i].addEventListener('change', () => {
-      List.taskList[i].toggleCompleted();
-    });
-  }
+  chkBoxes.forEach((each) => each.addEventListener('change', () => {
+    const index = +(each.parentElement.parentElement.getAttribute('id')) - 1;
+    List.taskList[index].toggleCompleted();
+    each.parentElement.parentElement.classList.toggle('completed');
+  }));
 }
+
 function chkBxEvntsClr() {
   const chkBoxes = document.querySelectorAll('.task input[type="checkbox"]');
   for (let i = 0; i < chkBoxes.length; i += 1) {
@@ -27,6 +28,7 @@ export default (taskItem, index) => {
   checkbox.setAttribute('type', 'checkbox');
   const description = document.createElement('input');
   description.setAttribute('type', 'text');
+  description.classList.add('task-description');
   description.value = taskItem;
   const btnWrapper = document.createElement('div');
   const dragBtn = document.createElement('i');
