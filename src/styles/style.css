@@ -76,6 +76,12 @@ main {
   font-style: italic;
 }
 
+.task input {
+  font-family: sans-serif, monospace;
+  border: none;
+  cursor: default;
+}
+
 .add-item input:focus {
   outline: none;
 }
@@ -112,12 +118,6 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.task input {
-  font-family: sans-serif, monospace;
-  border: none;
-  cursor: default;
 }
 
 .completed .task-description {
