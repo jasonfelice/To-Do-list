@@ -29,7 +29,7 @@ export default class List {
   }
 
   static deleteCompleted() {
-    taskList = List.taskList.filter((each) => each.isCompleted !== true);
+    List.taskList = List.taskList.filter((each) => each.isCompleted !== true);
     List.reindex();
   }
 }
