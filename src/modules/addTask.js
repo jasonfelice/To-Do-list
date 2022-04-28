@@ -30,6 +30,10 @@ export default (taskItem, index) => {
   description.setAttribute('type', 'text');
   description.classList.add('task-description');
   description.value = taskItem;
+  description.addEventListener('input', (e) => {
+    const desInput = e.target;
+    List.taskList[+(desInput.parentElement.parentElement.getAttribute('id') - 1)].updateTask(desInput.value);
+  });
   const btnWrapper = document.createElement('div');
   const dragBtn = document.createElement('i');
   dragBtn.classList.add('drag-btn');
