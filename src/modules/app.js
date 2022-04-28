@@ -29,7 +29,7 @@ clearButton.addEventListener('click', (e) => {
   e.preventDefault();
   const allTasks = document.querySelectorAll('.list-item');
   allTasks.forEach((item) => {
-    if(item.classList['value'].includes('completed')) {
+    if (item.classList.value.includes('completed')) {
       item.remove();
       List.deleteCompleted();
     }
