@@ -1,6 +1,6 @@
-import addTask from './addTask';
-import { List } from './List';
-import updateStorage from './updateStorage';
+import addTask from './addTask.js';
+import List from './List.js';
+import updateStorage from './updateStorage.js';
 
 const addInput = document.querySelector('.add-item input');
 const returnBtn = document.querySelector('.return-button');

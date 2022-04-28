@@ -1,5 +1,5 @@
-import { List } from './List';
-import updateStorage from './updateStorage';
+import List from './List.js';
+import updateStorage from './updateStorage.js';
 
 const listWrapper = document.querySelector('.to-do-list');
 

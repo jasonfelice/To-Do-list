@@ -1,4 +1,4 @@
-export class List {
+export default class List {
   constructor(task, index, boo) {
     this.task = task;
     this.index = index;
