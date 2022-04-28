@@ -14,7 +14,7 @@
 
 ## Install
 
-Download all dependencies run:
+Download all dependencies after cloning this repository. Run:
 ```
 npm install
 ```
