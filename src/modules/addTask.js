@@ -1,4 +1,5 @@
 import { List } from './List';
+import updateStorage from './updateStorage';
 
 const listWrapper = document.querySelector('.to-do-list');
 
@@ -8,6 +9,7 @@ function chkBxEvent() {
     const index = +(each.parentElement.parentElement.getAttribute('id')) - 1;
     List.taskList[index].toggleCompleted();
     each.parentElement.parentElement.classList.toggle('completed');
+    updateStorage();
   }));
 }
 
@@ -18,7 +20,7 @@ function chkBxEvntsClr() {
   }
 }
 
-export default (taskItem, index) => {
+export default (taskItem, index, boo) => {
   const taskWrapper = document.createElement('div');
   taskWrapper.classList.add('list-item');
   taskWrapper.setAttribute('id', index);
@@ -26,6 +28,10 @@ export default (taskItem, index) => {
   task.classList.add('task');
   const checkbox = document.createElement('input');
   checkbox.setAttribute('type', 'checkbox');
+  if (boo) {
+    checkbox.setAttribute('checked', '');
+    taskWrapper.classList.toggle('completed');
+  }
   const description = document.createElement('input');
   description.setAttribute('type', 'text');
   description.classList.add('task-description');
@@ -33,6 +39,7 @@ export default (taskItem, index) => {
   description.addEventListener('input', (e) => {
     const desInput = e.target;
     List.taskList[+(desInput.parentElement.parentElement.getAttribute('id') - 1)].updateTask(desInput.value);
+    updateStorage();
   });
   const btnWrapper = document.createElement('div');
   const dragBtn = document.createElement('i');
@@ -43,6 +50,7 @@ export default (taskItem, index) => {
     const theTask = delBtn.parentElement.parentElement;
     List.deleteTask(+theTask.getAttribute('id'));
     theTask.remove();
+    updateStorage();
   });
   delBtn.addEventListener('click', () => {
     const listItems = document.querySelectorAll('.list-item');
