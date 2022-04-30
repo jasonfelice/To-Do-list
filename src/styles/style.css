@@ -4,6 +4,7 @@
   --text_color_completed: #666;
   --btn_main: #7f7f7f;
   --btn_hover: #4c4c4c;
+  --field_focus: #f5ffe9;
 }
 
 * {
@@ -20,6 +21,10 @@ body {
 main {
   display: flex;
   height: 85vh;
+}
+
+input {
+  background-color: inherit;
 }
 
 .container {
@@ -193,4 +198,10 @@ main {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--btn_hover);
+}
+
+/* Utility Class */
+
+.field-focus {
+  background-color: var(--field_focus);
 }
