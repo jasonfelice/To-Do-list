@@ -35,12 +35,6 @@ export default (taskItem, index, boo) => {
   const description = document.createElement('input');
   description.setAttribute('type', 'text');
   description.classList.add('task-description');
-  description.addEventListener('focus', () => {
-    taskWrapper.classList.toggle('field-focus');
-  });
-  description.addEventListener('blur', () => {
-    taskWrapper.classList.toggle('field-focus');
-  });
   description.value = taskItem;
   description.addEventListener('input', (e) => {
     const desInput = e.target;
@@ -63,6 +57,16 @@ export default (taskItem, index, boo) => {
     for (let i = 0; i < listItems.length; i += 1) {
       listItems[i].setAttribute('id', i + 1);
     }
+  });
+  description.addEventListener('focus', () => {
+    taskWrapper.classList.toggle('field-focus');
+    delBtn.style.display = 'block';
+    dragBtn.style.display = 'none';
+  });
+  description.addEventListener('blur', () => {
+    taskWrapper.classList.toggle('field-focus');
+    delBtn.style.display = 'none';
+    dragBtn.style.display = 'block';
   });
   btnWrapper.appendChild(dragBtn);
   btnWrapper.appendChild(delBtn);
