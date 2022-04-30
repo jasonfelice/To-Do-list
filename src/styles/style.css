@@ -2,6 +2,8 @@
   --seperator_color: #ddd;
   --text_color: #444;
   --text_color_completed: #666;
+  --btn_main: #7f7f7f;
+  --btn_hover: #4c4c4c;
 }
 
 * {
@@ -27,6 +29,7 @@ main {
   margin: auto;
   width: 40%;
   min-width: 500px;
+  max-height: 500px;
   background-color: #fff;
   box-shadow: 0 0 10px #666;
   border-radius: 2px;
@@ -170,4 +173,22 @@ main {
 
 .app-footer a:hover {
   color: var(--text_color);
+}
+
+/* Scroll  bar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--btn_main);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--btn_hover);
 }
