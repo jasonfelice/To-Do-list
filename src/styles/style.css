@@ -12,10 +12,6 @@
   background: var(--btn_main);
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--btn_hover);
-}
-
 :root {
   --seperator_color: #ddd;
   --text_color: #444;
@@ -23,6 +19,10 @@
   --btn_main: #7f7f7f;
   --btn_hover: #4c4c4c;
   --field_focus: #f5ffe9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--btn_hover);
 }
 
 * {
