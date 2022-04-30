@@ -37,6 +37,7 @@ main {
 .app-header {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 
 /* App Header */
@@ -104,6 +105,7 @@ main {
 .to-do-list {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 
 .list-item {
