@@ -5,6 +5,7 @@ import updateStorage from './updateStorage.js';
 const addInput = document.querySelector('.add-item input');
 const returnBtn = document.querySelector('.return-button');
 const clearButton = document.getElementById('clearCompleted');
+const createTaskInput = document.querySelector('#create-task');
 
 if (localStorage.tasks) {
   const storedTasks = JSON.parse(localStorage.tasks);
@@ -23,6 +24,15 @@ returnBtn.addEventListener('click', () => {
   updateTaskArray(addInput.value);
   updateStorage();
   addInput.value = '';
+});
+
+createTaskInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    addTask(addInput.value, List.taskList.length + 1, false);
+    updateTaskArray(addInput.value);
+    updateStorage();
+    addInput.value = '';
+  }
 });
 
 clearButton.addEventListener('click', (e) => {

@@ -58,6 +58,18 @@ export default (taskItem, index, boo) => {
       listItems[i].setAttribute('id', i + 1);
     }
   });
+  description.addEventListener('focus', () => {
+    taskWrapper.classList.toggle('field-focus');
+    delBtn.style.display = 'block';
+    dragBtn.style.display = 'none';
+  });
+  description.addEventListener('blur', () => {
+    setTimeout(() => {
+      taskWrapper.classList.toggle('field-focus');
+      delBtn.style.display = 'none';
+      dragBtn.style.display = 'block';
+    }, 100);
+  });
   btnWrapper.appendChild(dragBtn);
   btnWrapper.appendChild(delBtn);
   task.appendChild(checkbox);
