@@ -54,6 +54,7 @@ main {
 .heading p {
   font-size: 1.25rem;
   color: var(--text_color);
+  text-shadow: -1px 0 5px #d1cece;
 }
 
 .heading i {
@@ -83,6 +84,7 @@ main {
   font-family: sans-serif, monospace;
   border: none;
   cursor: default;
+  text-shadow: -1px 0 5px #d1cece;
 }
 
 .add-item input:focus {
