@@ -25,10 +25,8 @@ main {
   flex-direction: column;
   justify-content: space-between;
   margin: auto;
-  width: 90vw;
-  height: 60vw;
-  max-width: 500px;
-  max-height: 350px;
+  width: 40%;
+  min-width: 500px;
   background-color: #fff;
   box-shadow: 0 0 10px #666;
   border-radius: 2px;
@@ -37,7 +35,7 @@ main {
 .app-header {
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 /* App Header */
