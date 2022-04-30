@@ -1,3 +1,21 @@
+/* Scroll  bar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--btn_main);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--btn_hover);
+}
+
 :root {
   --seperator_color: #ddd;
   --text_color: #444;
@@ -132,13 +150,13 @@ input {
   gap: 1rem;
 }
 
+.task-description {
+  flex: 1;
+}
+
 .completed .task-description {
   text-decoration: line-through;
   color: var(--text_color_completed);
-}
-
-.task-description {
-  flex: 1;
 }
 
 .task input:focus {
@@ -181,24 +199,6 @@ input {
 
 .app-footer a:hover {
   color: var(--text_color);
-}
-
-/* Scroll  bar */
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--btn_main);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--btn_hover);
 }
 
 /* Utility Class */

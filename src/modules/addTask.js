@@ -68,7 +68,7 @@ export default (taskItem, index, boo) => {
       taskWrapper.classList.toggle('field-focus');
       delBtn.style.display = 'none';
       dragBtn.style.display = 'block';
-    }, 100)
+    }, 100);
   });
   btnWrapper.appendChild(dragBtn);
   btnWrapper.appendChild(delBtn);
