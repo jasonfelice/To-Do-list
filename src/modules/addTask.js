@@ -35,6 +35,12 @@ export default (taskItem, index, boo) => {
   const description = document.createElement('input');
   description.setAttribute('type', 'text');
   description.classList.add('task-description');
+  description.addEventListener('focus', () => {
+    taskWrapper.classList.toggle('field-focus');
+  });
+  description.addEventListener('blur', () => {
+    taskWrapper.classList.toggle('field-focus');
+  });
   description.value = taskItem;
   description.addEventListener('input', (e) => {
     const desInput = e.target;
