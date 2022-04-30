@@ -64,9 +64,11 @@ export default (taskItem, index, boo) => {
     dragBtn.style.display = 'none';
   });
   description.addEventListener('blur', () => {
-    taskWrapper.classList.toggle('field-focus');
-    delBtn.style.display = 'none';
-    dragBtn.style.display = 'block';
+    setTimeout(() => {
+      taskWrapper.classList.toggle('field-focus');
+      delBtn.style.display = 'none';
+      dragBtn.style.display = 'block';
+    }, 100)
   });
   btnWrapper.appendChild(dragBtn);
   btnWrapper.appendChild(delBtn);
