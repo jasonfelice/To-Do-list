@@ -1,26 +1,9 @@
 import List from './List.js';
 import updateStorage from './updateStorage.js';
 
-const listWrapper = document.querySelector('.to-do-list');
-
-function chkBxEvent() {
-  const chkBoxes = document.querySelectorAll('.task input[type="checkbox"]');
-  chkBoxes.forEach((each) => each.addEventListener('change', () => {
-    const index = +(each.parentElement.parentElement.getAttribute('id')) - 1;
-    List.taskList[index].toggleCompleted();
-    each.parentElement.parentElement.classList.toggle('completed');
-    updateStorage();
-  }));
-}
-
-function chkBxEvntsClr() {
-  const chkBoxes = document.querySelectorAll('.task input[type="checkbox"]');
-  for (let i = 0; i < chkBoxes.length; i += 1) {
-    chkBoxes[i].replaceWith(chkBoxes[i].cloneNode(true));
-  }
-}
 
 export default (taskItem, index, boo) => {
+  const listWrapper = document.querySelector('.to-do-list');
   const taskWrapper = document.createElement('div');
   taskWrapper.classList.add('list-item');
   taskWrapper.setAttribute('id', index);
@@ -70,6 +53,13 @@ export default (taskItem, index, boo) => {
       dragBtn.style.display = 'block';
     }, 100);
   });
+  checkbox.addEventListener('change', (e) => {
+    const checkParent = e.target.parentElement.parentElement;
+    const index = +checkParent.getAttribute('id') - 1;
+    List.taskList[index].toggleCompleted();
+    checkParent.classList.toggle('completed');
+    updateStorage();
+  });
   btnWrapper.appendChild(dragBtn);
   btnWrapper.appendChild(delBtn);
   task.appendChild(checkbox);
@@ -77,6 +67,4 @@ export default (taskItem, index, boo) => {
   taskWrapper.appendChild(task);
   taskWrapper.appendChild(btnWrapper);
   listWrapper.appendChild(taskWrapper);
-  chkBxEvntsClr();
-  chkBxEvent();
 };
