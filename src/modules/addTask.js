@@ -2,7 +2,7 @@ import List from './List.js';
 import updateStorage from './updateStorage.js';
 
 
-export default (taskItem, index, boo) => {
+export default function addTask (taskItem, index, boo) {
   const listWrapper = document.querySelector('.to-do-list');
   const taskWrapper = document.createElement('div');
   taskWrapper.classList.add('list-item');
@@ -68,3 +68,5 @@ export default (taskItem, index, boo) => {
   taskWrapper.appendChild(btnWrapper);
   listWrapper.appendChild(taskWrapper);
 };
+
+module.exports = addTask;
