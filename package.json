@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
