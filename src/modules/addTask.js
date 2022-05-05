@@ -68,5 +68,3 @@ export default function addTask (taskItem, index, boo) {
   taskWrapper.appendChild(btnWrapper);
   listWrapper.appendChild(taskWrapper);
 };
-
-module.exports = addTask;
