@@ -3,7 +3,7 @@ import List from './List.js';
 
 describe('Add/Delete items from to-do list', () => {
   describe('Add/Delete Tasks', () => {
-      test('Add one new item to the list', () => {
+    test('Add one new item to the list', () => {
       document.body.innerHTML = `
       <div class="to-do-list"></div>
       <i class="return-button">
@@ -46,7 +46,7 @@ describe('Add/Delete items from to-do list', () => {
         if (item.classList.value.includes('completed')) {
           item.remove();
         }
-          });
+      });
       const Newlist = document.querySelectorAll('.list-item');
       expect(Newlist).toHaveLength(1);
     });
