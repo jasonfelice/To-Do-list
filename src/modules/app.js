@@ -50,5 +50,3 @@ clearButton.addEventListener('click', (e) => {
     listItems[i].setAttribute('id', i + 1);
   }
 });
-
-module.exports = addTask;
