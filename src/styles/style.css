@@ -160,6 +160,12 @@ input {
   border-bottom: 1px solid var(--seperator_color);
 }
 
+.list-item:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
 .task {
   flex: 1;
   display: flex;
