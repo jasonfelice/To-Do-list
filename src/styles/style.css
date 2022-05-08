@@ -33,7 +33,24 @@
 }
 
 body {
-  background-color: #bbdfd4;
+  background: linear-gradient(-45deg, #ee7752, #e73c7c, #23a6d5, #23d5ab );
+  background-size: 400% 400%;
+  position: relative;
+  animation: changeBg 20s ease-in-out infinite;
+}
+
+@keyframes changeBg {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 main {
@@ -54,7 +71,7 @@ input {
   min-width: 500px;
   min-height: 500px;
   background-color: #fff;
-  box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 20px #666;
   border-radius: 2px;
 }
 
