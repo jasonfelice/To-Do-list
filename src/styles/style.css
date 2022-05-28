@@ -33,7 +33,7 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7c, #23a6d5, #23d5ab );
+  background: linear-gradient(-45deg, #ee7752, #e73c7c, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   position: relative;
   animation: changeBg 20s ease-in-out infinite;
@@ -73,12 +73,14 @@ input {
   background-color: #fff;
   box-shadow: 0 0 20px #666;
   border-radius: 2px;
+  position: absolute;
 }
 
 .app-header {
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
+  cursor: move;
 }
 
 /* App Header */
@@ -89,6 +91,7 @@ input {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--seperator_color);
+  user-select: none;
 }
 
 .heading p {
@@ -98,7 +101,7 @@ input {
 }
 
 .heading i {
-  background: url(../assets/reset-icon.svg) no-repeat center center/cover;
+  background: url(../assets/drag-icon.png) no-repeat center center/cover;
   width: 16px;
   height: 16px;
   filter: invert(0.35);
@@ -158,6 +161,12 @@ input {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--seperator_color);
+}
+
+.list-item:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 .task {
