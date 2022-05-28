@@ -2,7 +2,7 @@ import List from './List.js';
 import updateStorage from './updateStorage.js';
 
 export default function addTask(taskItem, index, boo) {
-  if(taskItem) {
+  if (taskItem) {
     const listWrapper = document.querySelector('.to-do-list');
     const taskWrapper = document.createElement('div');
     taskWrapper.classList.add('list-item');

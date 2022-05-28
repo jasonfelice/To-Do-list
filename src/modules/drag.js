@@ -3,22 +3,22 @@ export default () => {
   const header = wrapper.querySelector('.heading');
 
   const onDrag = ({ movementX, movementY }) => {
-    let getStyle = window.getComputedStyle(wrapper);
-    let left = parseInt(getStyle.left);
-    let top = parseInt(getStyle.top);
+    const getStyle = window.getComputedStyle(wrapper);
+    const left = parseInt(getStyle.left, 10);
+    const top = parseInt(getStyle.top, 10);
     wrapper.style.left = `${left + movementX}px`;
     wrapper.style.top = `${top + movementY}px`;
-  }
+  };
 
   header.addEventListener('mousedown', () => {
-    header.addEventListener('mousemove', onDrag)
+    header.addEventListener('mousemove', onDrag);
   });
 
   header.addEventListener('mouseup', () => {
-    header.removeEventListener('mousemove', onDrag)
+    header.removeEventListener('mousemove', onDrag);
   });
 
   header.addEventListener('mouseout', () => {
-    header.removeEventListener('mousemove', onDrag)
+    header.removeEventListener('mousemove', onDrag);
   });
-}
+};
