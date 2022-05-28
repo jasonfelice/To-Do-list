@@ -42,7 +42,7 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
 ## Acknowledgments
-- Reset icon by: [Icons8](https://icons8.com/icon/59872/refresh/)
+- Drag Reorder icon: [Icons8](https://icons8.com/icon/99436/drag-reorder/)
 - Menu Vertical icon by: [Icons8](https://icons8.com/icon/98963/menu-vertical/)
 - Favicon icon by: [Icons8](https://icons8.com/icon/4528/to-do/)
 - Delete icon by: [Icons8](https://icons8.com/icon/99961/delete/)

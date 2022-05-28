@@ -101,7 +101,7 @@ input {
 }
 
 .heading i {
-  background: url(../assets/reset-icon.svg) no-repeat center center/cover;
+  background: url(../assets/drag-icon.png) no-repeat center center/cover;
   width: 16px;
   height: 16px;
   filter: invert(0.35);
