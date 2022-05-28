@@ -1,6 +1,8 @@
 import addTask from './addTask.js';
 import List from './List.js';
 import updateStorage from './updateStorage.js';
+import appDrag from './drag.js';
+import drag from './drag.js';
 
 const addInput = document.querySelector('.add-item input');
 const returnBtn = document.querySelector('.return-button');
@@ -50,3 +52,5 @@ clearButton.addEventListener('click', (e) => {
     listItems[i].setAttribute('id', i + 1);
   }
 });
+
+drag();

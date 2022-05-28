@@ -73,12 +73,14 @@ input {
   background-color: #fff;
   box-shadow: 0 0 20px #666;
   border-radius: 2px;
+  position: absolute;
 }
 
 .app-header {
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
+  cursor: move;
 }
 
 /* App Header */
@@ -89,6 +91,7 @@ input {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--seperator_color);
+  user-select: none;
 }
 
 .heading p {
