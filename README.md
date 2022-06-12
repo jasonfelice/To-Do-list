@@ -1,6 +1,6 @@
 # Project - To-Do List
 
-![Preview](src/assets/preview/preview.png)
+<p align="center"><img src="./src/assets/preview/preview.png"></p>
 
 ## Built With
 
