@@ -10,7 +10,7 @@
 - webpack
 
 ## Live Demo
-[Live Demo Link](https://jasonfelice.github.io/To-Do-list/dist)
+[Live Demo Link](https://jasonfelice.github.io/To-Do-list)
 
 ## Install
 
@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 👤 **Author1**
 
 - GitHub: [@jasonfelice](https://github.com/jasonfelice)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jason-felice-11a5a622b/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jake-felice/)
 
 ## 🤝 Contributing
 
