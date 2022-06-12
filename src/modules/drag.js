@@ -18,7 +18,7 @@ export default () => {
     header.removeEventListener('mousemove', onDrag);
   });
 
-  header.addEventListener('mouseout', () => {
+  wrapper.addEventListener('mouseleave', () => {
     header.removeEventListener('mousemove', onDrag);
   });
 };
